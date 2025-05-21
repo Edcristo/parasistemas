@@ -1,19 +1,392 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>ParaSistemas</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: Arial; text-align: center; padding: 2em; }
-    h1 { color: #2c3e50; }
-    p { font-size: 18px; color: #555; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pará Sistemas - Desenvolvimento de Software</title>
+    <meta name="description" content="A Pará Sistemas é uma empresa especializada em desenvolvimento de software, oferecendo soluções tecnológicas inovadoras para empresas de todos os portes.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-  <h1>Bem-vindo à ParaSistemas</h1>
-  <p>Seu parceiro em soluções tecnológicas.</p>
-  <p>Contato: contato@parasistemas.com.br</p>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo"><img src="images/logo-original.png" alt="Pará Sistemas" style="height: 50px;"></div>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content animate">
+                <h1>Transformando ideias em soluções digitais</h1>
+                <p class="animate delay-1">Somos especialistas em desenvolvimento de software personalizado para empresas que buscam inovação e eficiência.</p>
+                <div class="hero-btns animate delay-2">
+                    <a href="#servicos" class="btn">Nossos Serviços</a>
+                    <a href="#contato" class="btn btn-outline">Fale Conosco</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="section">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Sobre Nós</h2>
+                <p>Conheça a Pará Sistemas e nossa trajetória de inovação e excelência em desenvolvimento de software.</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img animate-on-scroll">
+                    <img src="images/about-img.jpg" alt="Equipe Pará Sistemas">
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h3>Excelência em Tecnologia da Amazônia para o Mundo</h3>
+                    <p>A Pará Sistemas nasceu da paixão por tecnologia e do desejo de transformar o cenário digital na região amazônica. Fundada por profissionais com vasta experiência no mercado de TI, nossa empresa se destaca pelo compromisso com a qualidade e inovação.</p>
+                    <p>Localizada em Belém do Pará, temos orgulho de nossas raízes e da capacidade de unir o conhecimento local com as melhores práticas globais de desenvolvimento de software.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>Equipe Qualificada</h4>
+                                <p>Profissionais certificados e em constante atualização.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>Metodologias Ágeis</h4>
+                                <p>Processos eficientes para entregas rápidas e de qualidade.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>Tecnologias Modernas</h4>
+                                <p>Utilizamos as ferramentas mais atuais do mercado.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>Suporte Contínuo</h4>
+                                <p>Acompanhamento e manutenção após a entrega.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" style="background-color: var(--primary-color); padding: 80px 0; color: white;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center;">
+                <div class="stat-item animate-on-scroll">
+                    <h3 class="counter" data-target="150">0</h3>
+                    <p>Projetos Concluídos</p>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <h3 class="counter" data-target="98">0</h3>
+                    <p>Clientes Satisfeitos</p>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <h3 class="counter" data-target="15">0</h3>
+                    <p>Anos de Experiência</p>
+                </div>
+                <div class="stat-item animate-on-scroll">
+                    <h3 class="counter" data-target="25">0</h3>
+                    <p>Especialistas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços Section -->
+    <section id="servicos" class="section services">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos soluções completas em desenvolvimento de software para atender às necessidades específicas do seu negócio.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Desenvolvimento Web</h3>
+                        <p>Criamos sites e aplicações web responsivas, modernas e otimizadas para SEO, garantindo a melhor experiência para seus usuários em qualquer dispositivo.</p>
+                        <a href="#contato" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Aplicativos Mobile</h3>
+                        <p>Desenvolvemos aplicativos nativos e híbridos para iOS e Android, com interfaces intuitivas e alto desempenho para atender às necessidades do seu público.</p>
+                        <a href="#contato" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Sistemas Empresariais</h3>
+                        <p>Automatize processos e aumente a eficiência da sua empresa com sistemas personalizados que atendem às necessidades específicas do seu negócio.</p>
+                        <a href="#contato" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Banco de Dados</h3>
+                        <p>Projetamos e implementamos soluções de banco de dados escaláveis e seguras, garantindo a integridade e disponibilidade das suas informações.</p>
+                        <a href="#contato" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Cloud Computing</h3>
+                        <p>Migre suas aplicações para a nuvem e aproveite os benefícios de escalabilidade, segurança e redução de custos com nossa expertise em AWS, Azure e Google Cloud.</p>
+                        <a href="#contato" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3>Segurança Digital</h3>
+                        <p>Proteja seus dados e sistemas com nossas soluções de segurança digital, incluindo auditorias, implementação de protocolos e treinamento de equipes.</p>
+                        <a href="#contato" class="btn">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Nosso Portfólio</h2>
+                <p>Conheça alguns dos projetos que desenvolvemos e as soluções que entregamos para nossos clientes.</p>
+            </div>
+            <div class="portfolio-filters animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="sistema">Sistemas</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item web animate-on-scroll">
+                    <img src="images/portfolio-1.jpg" alt="E-commerce Amazônia Produtos Naturais" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce Amazônia</h3>
+                        <p>Plataforma de vendas online para produtos naturais da Amazônia</p>
+                        <a href="#" class="portfolio-btn">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item mobile animate-on-scroll">
+                    <img src="images/portfolio-2.jpg" alt="Aplicativo Turismo Pará" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>App Turismo Pará</h3>
+                        <p>Aplicativo de guia turístico para o estado do Pará</p>
+                        <a href="#" class="portfolio-btn">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item sistema animate-on-scroll">
+                    <img src="images/portfolio-3.jpg" alt="Sistema de Gestão Hospitalar" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Sistema Hospitalar</h3>
+                        <p>Sistema integrado para gestão de hospitais e clínicas</p>
+                        <a href="#" class="portfolio-btn">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item web animate-on-scroll">
+                    <img src="images/portfolio-4.jpg" alt="Portal Educacional" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Portal Educacional</h3>
+                        <p>Plataforma de ensino à distância para instituições educacionais</p>
+                        <a href="#" class="portfolio-btn">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item mobile animate-on-scroll">
+                    <img src="images/portfolio-5.jpg" alt="Aplicativo de Delivery" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>App Delivery</h3>
+                        <p>Solução completa para restaurantes e serviços de entrega</p>
+                        <a href="#" class="portfolio-btn">Ver Detalhes</a>
+                    </div>
+                </div>
+                <div class="portfolio-item sistema animate-on-scroll">
+                    <img src="images/portfolio-6.jpg" alt="Sistema de Gestão Financeira" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <h3>Gestão Financeira</h3>
+                        <p>Sistema para controle financeiro e contábil empresarial</p>
+                        <a href="#" class="portfolio-btn">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="section contact">
+        <div class="container">
+            <div class="section-title animate-on-scroll">
+                <h2>Entre em Contato</h2>
+                <p>Estamos prontos para ajudar a transformar suas ideias em realidade. Entre em contato conosco para discutir seu projeto.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Endereço</h3>
+                            <p>Av. Presidente Vargas, 1000, Belém, PA</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Telefone</h3>
+                            <p>(91) 3223-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>contato@parasistemas.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda a Sexta: 8h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form animate-on-scroll">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" class="form-control" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" class="form-control" placeholder="Assunto">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" class="form-control" placeholder="Sua Mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Pará Sistemas</h3>
+                    <p>Somos uma empresa especializada em desenvolvimento de software, comprometida com a inovação e a excelência em cada projeto.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Serviços</h3>
+                    <ul class="footer-links">
+                        <li><a href="#servicos">Desenvolvimento Web</a></li>
+                        <li><a href="#servicos">Aplicativos Mobile</a></li>
+                        <li><a href="#servicos">Sistemas Empresariais</a></li>
+                        <li><a href="#servicos">Banco de Dados</a></li>
+                        <li><a href="#servicos">Cloud Computing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Inscreva-se para receber novidades e atualizações sobre tecnologia e inovação.</p>
+                    <form class="footer-form">
+                        <input type="email" placeholder="Seu email" class="form-control">
+                        <button type="submit" class="btn">Inscrever</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pará Sistemas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
