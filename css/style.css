@@ -1,9 +1,9 @@
 /* Estilos para o site da Pará Sistemas */
 :root {
-  --primary-color: #0077b6; /* Azul que remete aos rios do Pará */
-  --secondary-color: #00b4d8; /* Azul mais claro */
-  --accent-color: #48cae4; /* Azul ainda mais claro para detalhes */
-  --dark-color: #023e8a; /* Azul escuro */
+  --primary-color: #5E0000; /* Vermelho escuro/vinho da logo */
+  --secondary-color: #00AEEF; /* Azul ciano da logo */
+  --accent-color: #FF3C38; /* Vermelho claro da logo */
+  --dark-color: #3D0000; /* Vermelho escuro mais profundo */
   --text-color: #333333;
   --light-color: #f8f9fa;
   --success-color: #38b000;
